@@ -56,3 +56,40 @@ string select(string func_type){
   }else out= "invalid function type\n";{
   } return out;
 }
+
+/** myPrint
+* @brief Calls select() to print out the output with correct prompt
+* @tparam T : (int, double or string) output of sum, division, or isGreater Than
+* @parm func_type : (string)
+* @parm output
+*/
+template <typename T>
+void myPrint(string func_type, T output){
+  cout << select(func_type) << output << endl;
+}
+
+int main()
+{
+  // initialize 3 parameters
+  int x1 = 2;
+  int x2 = 3;
+  int x3 = 5;
+
+  //call sumOfThree
+  int sum_out = sumOfThree(x1, x2, x3);
+  //call myPrint
+  myPrint("sum",sum_out);
+
+  //initialize 2 double parameter
+  double dividend = 12345.1;
+  double divisor = 2345.6;
+
+  //call division
+  double div_out = division(dividend, divisor);
+  myPrint("division", div_out);
+
+  //compare div_out and sum_out
+  bool is_greater_out = isGreaterThan(div_out, sum_out);
+  myPrint("comparison", is_greater_out);
+  return 0;
+}
