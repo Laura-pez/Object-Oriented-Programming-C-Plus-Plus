@@ -50,7 +50,6 @@ string select(string func_type){
     out="The sum is";
   } else if (func_type == "division"){
     out="The quotient is";
-  return "The quotient";
   }else if (func_type=="comparison"){
     out ="The first value being greater than the second value is";
   }else out= "invalid function type\n";{
