@@ -44,17 +44,15 @@ bool isGreatherThan(double x, int y){
 * @param func_type : (string)
 * @return string
 */
-string select(string func_type)
-if(func_type == "sum"){
-  out = "the sum is ";
-}
-else if(func_type == "division"){
-  out ="The quotient is ";
-}
-  return "The quotient is ";{
-else if(func_type == "comparison")
-out = "The first value being greater than the second value is ";
-}
-else out = "Invalid function type\n";{
-  return out;
+string select(string func_type){
+  string out="";
+  if(func_type=="sum"){
+    out="The sum is";
+  } else if (func_type == "division"){
+    out="The quotient is";
+  return "The quotient";
+  }else if (func_type=="comparison"){
+    out ="The first value being greater than the second value is";
+  }else out= "invalid function type\n";{
+  } return out;
 }
