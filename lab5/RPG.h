@@ -1,4 +1,5 @@
 #define RPG_H
+#include <string>
 
 using namespace std;
 
