@@ -9,7 +9,7 @@ class RPG {
      public:
         //constructors
         RPG();
-        RPG(string name, int healht, int strenght, int defense, string type);
+        RPG(string name, int health, int strengh, int defense, string type);
         // COMPLETE THE REST
         void setSkills();
         void printAction(string ,RPG);
