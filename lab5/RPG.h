@@ -12,11 +12,10 @@ class RPG {
         RPG(string name, int healht, int strenght, int defense, string type);
         // COMPLETE THE REST
         void setSkills();
-        void printAction(string ,RPG)
-        void updateHealth(int)
-        void attack(RBG *)
-        void updateHealth(int)
-        void attack(RPG *)
+        void printAction(string ,RPG);
+        void updateHealth(int);
+        void attack(RPG *);
+        void useSkill(RPG *);
         bool isAlive() const;
         string getName() const;
         int getHealth() const;
@@ -24,11 +23,9 @@ class RPG {
         int getDefense() const;
     private:
         // COMPLETE THE REST
-        string type: // warrior, mage, thief, archer
-        string skill[SKILL_SIZE];
         string name;
         int health; 
-        int strenght;
+        int strengh;
         int defense;
         string type;
         string skills[SKILL_SIZE];
