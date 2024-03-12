@@ -9,14 +9,14 @@ class RPG {
      public:
         //constructors
         RPG();
-        RPG(string name, int health, int strengh, int defense, string type);
+        RPG(string name, int health, int strength, int defense, string type);
         // COMPLETE THE REST
         void setSkills();
-        void printAction(string ,RPG);
-        void updateHealth(int);
-        void attack(RPG *);
-        void useSkill(RPG *);
-        bool isAlive() const;
+        // void printAction(string ,RPG);
+        // void updateHealth(int);
+        // void attack(RPG *);
+        // void useSkill(RPG *);
+        // bool isAlive() const;
         string getName() const;
         int getHealth() const;
         int getStrength() const;
@@ -25,7 +25,7 @@ class RPG {
         // COMPLETE THE REST
         string name;
         int health; 
-        int strengh;
+        int strength;
         int defense;
         string type;
         string skills[SKILL_SIZE];
