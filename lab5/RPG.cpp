@@ -64,11 +64,12 @@ void RPG::printAction(string skill, RPG opponent){
 *
 * @param new_health
 */  
-void RPG::updateHealth(int){
+void RPG::updateHealth(int new_health){
+    health = new_health;
 }
   
-void RPG::attack(RPG *){
-}
+//void RPG::attack(RPG *){
+//}
 
 void RPG::useSkill(RPG *){
 }
@@ -79,7 +80,7 @@ void RPG::useSkill(RPG *){
 * @return false
 */
 bool RPG::isAlive() const{
-    return false;
+    return health > 0;
 }
 
 string RPG::getName() const{
@@ -87,7 +88,7 @@ string RPG::getName() const{
 }
 
 int RPG::getHealth() const{
-    return health > 0;
+    return health;
 }
 
 int RPG::getStrength() const{
