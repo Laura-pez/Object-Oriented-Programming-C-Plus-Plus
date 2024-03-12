@@ -3,33 +3,52 @@
 #include <array>
 
 using namespace std;
+/**
+ * @brief Construct a new RPG:: RPG object
+ * 
+ */
 
 RPG::RPG(){
-     string name = "NPC";
-     health = 100;
-     strengh = 10;
-     defense = 10;
-     string type = warrior;
-    string skills[SKILL_SIZE];
+    name = "NPC";
+    health = 100;
+    strength = 10;
+    defense = 10;
+    type = warrior;
+    skills[0] = "slash";
+    skills[1] = "parry";
 }
+
+/**
+ * @brief Construct a new RPG:: RPG object
+ * 
+ * @param name 
+ * @param health 
+ * @param strength 
+ * @param defense
+ * @param type 
+ */
 
 RPG::RPG(string name, int health, int strength, int defense, string type){
     this->name = name;
     this->health = health;
-    this->strength = Strength;
-    this->defense = defense
-    this->string = string
+    this->strength = strength;
+    this->defense = defense;
+    this->type = type;
+
+
 }
 
 void RPG::setSkills(){
+    
 }
-
+ 
 void RPG::printAction(string, RPG){
 }
 
 void RPG::updateHealth(int){
+    
 }
-
+  
 void RPG::attack(RPG *){
 }
 
