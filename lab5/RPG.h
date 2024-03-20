@@ -1,4 +1,4 @@
-#define RPG_H
+#ifndef RPG_H
 #include <string>
 
 using namespace std;
