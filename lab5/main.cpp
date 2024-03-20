@@ -16,6 +16,7 @@ int main() {
 
     player.updateHealth(50);
     cout << "Player's updated health: " << player.getHealth() << endl;
+    npc.attack(&player);
 
     return 0;
 }
