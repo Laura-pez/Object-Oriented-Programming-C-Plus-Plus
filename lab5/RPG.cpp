@@ -1,5 +1,5 @@
 #include <iostream>
-#include "RPG.h"
+#include "RPG.H"
 #include <array>
 
 using namespace std;
@@ -13,7 +13,7 @@ RPG::RPG(){
     health = 100;
     strength = 10;
     defense = 10;
-    type = warrior;
+    type = "warrior";
     skills[0] = "slash";
     skills[1] = "parry";
 }
@@ -56,7 +56,7 @@ void RPG::setSkills(){
 
 }
 void RPG::printAction(string skill, RPG opponent){
-    printf("%s used %s on %\n", name.c_str(), skill.c_str(), opponent.getName().c_str());
+ printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName().c_str());
 }
 /**
 
@@ -67,7 +67,7 @@ void RPG::printAction(string skill, RPG opponent){
 void RPG::updateHealth(int new_health){
     health = new_health;
 }
-  
+
 //void RPG::attack(RPG *){
 //}
 
