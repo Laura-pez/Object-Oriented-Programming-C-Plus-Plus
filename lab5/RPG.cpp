@@ -64,12 +64,25 @@ void RPG::printAction(string skill, RPG opponent){
 *
 * @param new_health
 */  
+void RPG::attack(RPG *opponent)
+    int damage = strength - opponent->getDefense();{
+    if(damage < 0){
+      opponent->updateHealth(opponent->getHealth() - damage);
+    printf("%s attacked %s for %d\n", name.c_str(), opponent->getName().c_str(), damage);
+    } else {
+        printf("%s's attack on %s no damage!\n", name.c_str(), opponent->getName().c_str());
+    }
+    }
 void RPG::updateHealth(int new_health){
     health = new_health;
 }
 
-//void RPG::attack(RPG *){
-//}
+void RPG::attack(RPG * opponent)
+  int damage = strength - opponent->getDefense();
+  if(damage < 0){
+    
+  }
+
 
 void RPG::useSkill(RPG *){
 }
