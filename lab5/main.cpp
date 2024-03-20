@@ -1,23 +1,21 @@
 #include <iostream>
-#include "RPG.h"
+#include "RPG.H"
 
 using namespace std;
 
 int main() {
-    RPG npc; 
-    RPG player("Player", 100, 10, 10, "warrior");
-    cout << "Player name: " << player.getName() << endl;
-    cout << "Player health: " << player.getHealth() << endl;
+    RPG npc;
+    RPG player("Player 1", 100, 10, 10, "warrior");
 
-    cout << "NPC name: " << npc.getName() << endl;
-    cout << "NPC health: " << npc.getHealth() << endl;
-    
+    cout << "Player Name: " << player.getName() << endl;
+    cout << "Player Health: " << player.getHealth() << endl;
+    cout << "Player Strength: " << player.getStrength() << endl;
+    cout << "Player Defense: " << player.getDefense() << endl;
 
-    npc.updateHealth(80);
-    player.updateHealth(100);
+    cout << "Is player alive? " << (player.isAlive() ? "Yes" : "No") << endl;
 
-    cout << "Updated NPC health: " << npc.getHealth() << endl;
-    cout << "Updated player health: " << player.getHealth() << endl;
+    player.updateHealth(50);
+    cout << "Player's updated health: " << player.getHealth() << endl;
 
     return 0;
 }
